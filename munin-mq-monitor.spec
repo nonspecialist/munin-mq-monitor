@@ -23,7 +23,6 @@ Plugin enabled (see http://activemq.apache.org/statisticsplugin.html)
 /bin/true
 
 %install
-make install DESTDIR=%{buildroot}
 rm -rf $RPM_BUILD_ROOT
 mkdir -p $RPM_BUILD_ROOT/usr/share/munin/plugins \
 	 $RPM_BUILD_ROOT/etc/munin/plugins
