@@ -39,6 +39,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(-,root,root,-)
 %attr(0755,root,root)	/usr/share/munin/plugins/broker_stats
 %attr(0755,root,root)	/usr/share/munin/plugins/queue_stats
+			/etc/munin/plugins/broker_stats
+			/etc/munin/plugins/queue_stats
 
 %changelog
 * Tue Nov 13 2012 Colin Panisset <nonspecialist@clabber.com>
