@@ -8,6 +8,7 @@ License:	GPL
 URL:		https://github.com/nonspecialist/munin-mq-monitor
 Source0:	munin-mq-monitor.tar.gz
 
+BuildArch:	noarch
 Requires:	stomppy, munin-node
 
 %description
@@ -43,3 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %changelog
 * Tue Nov 13 2012 Colin Panisset <nonspecialist@clabber.com>
 - initial version of spec file
+- initial, nasty version of horribly hacky python scripts
