@@ -54,6 +54,21 @@ class Listener(object):
                 print "{0}.tempusage.value {1}".format(qname, value["long"])
             elif value["string"] == "producerCount":
                 print "{0}.producers.value {1}".format(qname, value["long"])
+            elif value["string"] == "size":
+                print "{0}.size.value {1}".format(qname, value["long"])
+            elif value["string"] == "minEnqueueTime":
+                print "{0}.minenqueuetime.value {1}".format(qname, value["double"])
+            elif value["string"] == "maxEnqueueTime":
+                print "{0}.minenqueuetime.value {1}".format(qname, value["double"])
+            elif value["string"] == "averageEnqueueTime":
+                print "{0}.averageenqueuetime.value {1}".format(qname, value["double"])
+            elif value["string"] == "memoryLimit":
+                print "{0}.minenqueuetime.value {1}".format(qname, value["long"])
+            elif type(value["string"]) == list:
+		# we cannot parse this into a metric really
+                pass
+            else:
+                print "Don't know what to do with {0}".format(value)
 
     def parse_json_dict(self, message):
         for key, value in message.items():
