@@ -1,5 +1,5 @@
 Name:		munin-mq-monitor 
-Version:	0.1
+Version:	0.2
 Release:	1%{?dist}
 Summary:	Monitoring scripts for various message brokers
 
@@ -43,6 +43,8 @@ rm -rf $RPM_BUILD_ROOT
 			/etc/munin/plugins/queue_stats
 
 %changelog
-* Tue Nov 13 2012 Colin Panisset <nonspecialist@clabber.com>
+* Tue Dec 11 2012 Colin Panisset <github@clabber.com> 0.2-1
+- add a few more metrics which ActiveMQ emits (enqueue times, queue size)
+* Tue Nov 13 2012 Colin Panisset <nonspecialist@clabber.com> 0.1-1
 - initial version of spec file
 - initial, nasty version of horribly hacky python scripts
